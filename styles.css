@@ -1,0 +1,19 @@
+.hobbyPic{
+    width: 500px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px grey;
+
+}
+
+h2{
+    font-family: 'Ariel', sans-serif;
+    color: red;
+    font-style: italic;
+}
+
+
+body{
+  background-color: rgb(108, 199, 225);
+ 
+}
