@@ -17,3 +17,44 @@ body{
   background-color: rgb(108, 199, 225);
  
 }
+
+.name-switch {
+  position: relative;
+  display: inline-block;
+  width: 8ch; /* 固定占位，保证 Zhang 不动 */
+  cursor: pointer;
+}
+
+.name {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: opacity 0.2s ease;
+}
+
+h1 {
+  line-height: 1.2;
+  white-space: nowrap; /* 防止自动换行 */
+}
+
+.name-switch {
+  position: relative;
+  display: inline-block;
+  width: 5.5ch;
+  height: 1em;          /* ⭐ 给父元素高度 */
+  vertical-align: baseline;
+}
+
+.name {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.name.primary { opacity: 1; }
+.name.secondary { opacity: 0; }
+
+.name-switch:hover .primary { opacity: 0; }
+.name-switch:hover .secondary { opacity: 1; }
