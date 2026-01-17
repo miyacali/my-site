@@ -32,15 +32,16 @@ body {
 }
 
 .nav-brand {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: 900;
   color: #333;
-  letter-spacing: 2px;
+  letter-spacing: 0.05px;
   font-family: 'Inter', sans-serif;
 }
 
 .nav-z {
   color: #AA3224;
+  font-weight: 900;
 }
 
 .nav-z {
@@ -58,7 +59,7 @@ body {
 .nav-menu a {
   color: #333;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
   transition: opacity 0.3s ease;
 }
 
@@ -77,7 +78,7 @@ body {
 .hero-content {
   display: flex;
   gap: 4rem;
-  max-width: 1200px;
+  max-width: 900px;
   width: 100%;
   align-items: center;
 }
@@ -90,7 +91,7 @@ body {
 }
 
 .about-title {
-  font-size: 2.5rem;
+  font-size: 5rem;
   margin-bottom: 1.5rem;
   font-weight: normal;
   font-family: 'Courgette', cursive;
@@ -112,7 +113,7 @@ body {
 .about-box p {
   color: #A85050;
   line-height: 1.8;
-  font-size: 0.95rem;
+  font-size: 1.3rem;
 }
 
 .hero-image {
@@ -121,8 +122,8 @@ body {
 }
 
 .hero-image img {
-  width: 100%;
-  height: auto;
+  width: 730px;
+  height: 859px;
   border: 3px solid #333;
   display: block;
 }
@@ -171,7 +172,7 @@ body {
 }
 
 .hobbies h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #A85050;
   margin-bottom: 1.5rem;
   font-weight: normal;
@@ -180,7 +181,7 @@ body {
 .hobbies-text p {
   color: #A85050;
   line-height: 1.8;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .hobbies-text a {
@@ -198,8 +199,8 @@ body {
 }
 
 .hobbies-image img {
-  width: 100%;
-  height: auto;
+  width: 570px;
+  height: 500px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -214,7 +215,7 @@ body {
 }
 
 .passions h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #A85050;
   margin-bottom: 1.5rem;
   font-weight: normal;
@@ -223,7 +224,7 @@ body {
 .passions p {
   color: #A85050;
   line-height: 1.8;
-  font-size: 1rem;
+  font-size: 1.3rem;
   max-width: 800px;
   margin-left: 12rem;
 }
