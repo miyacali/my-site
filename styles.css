@@ -32,7 +32,7 @@ body {
 }
 
 .nav-brand {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
   color: #333;
   letter-spacing: 0.05px;
@@ -44,8 +44,9 @@ body {
   font-weight: 900;
 }
 
-.nav-z {
-  color: #AA3224;
+.nav-brand-link {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .nav-menu {
@@ -77,18 +78,22 @@ body {
 
 .hero-content {
   display: flex;
-  gap: 4rem;
-  max-width: 900px;
+  gap: 3.5rem;
+  max-width: 1000px;
   width: 100%;
   align-items: center;
+  margin-left: 10rem;
 }
 
 .about-box {
-  flex: 1;
+  flex: 0 0 auto;
   border: 2px solid #333;
   padding: 2rem;
   min-width: 300px;
+  width: 350px;
 }
+
+
 
 .about-title {
   font-size: 5rem;
@@ -102,6 +107,7 @@ body {
   font-weight: bold;
   display: block;
   letter-spacing: 2px;
+  transform: rotate(-15deg);
 }
 
 .about-italic {
@@ -117,13 +123,13 @@ body {
 }
 
 .hero-image {
-  flex: 1;
-  min-width: 300px;
+  flex: 0 0 auto;
+  width: 420px;
 }
 
 .hero-image img {
-  width: 730px;
-  height: 859px;
+  width: 100%;
+  height: auto;
   border: 3px solid #333;
   display: block;
 }
@@ -132,6 +138,7 @@ body {
 .portfolio, .contact {
   padding: 4rem 2rem;
   text-align: center;
+  
 }
 
 .portfolio h2, .contact h2 {
@@ -142,10 +149,15 @@ body {
 
 .portfolio a, .contact a {
   color: #A85050;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 1rem;
   margin: 0.5rem 0;
   transition: opacity 0.3s ease;
+  font-weight: bold;
+}
+
+.portfolio p, .contact p {
+  margin: 1.5rem 0;
 }
 
 .portfolio a:hover, .contact a:hover {
@@ -158,6 +170,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   border-top: 3px dashed #A85050;
+  border-bottom: 3px dashed #A85050;
   margin-top: 3rem;
 }
 
@@ -210,8 +223,8 @@ body {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  border-top: 3px dashed #A85050;
-  margin-top: 3rem;
+  border-bottom: 3px dashed #A85050;
+  margin-top: 0;
 }
 
 .passions h2 {
@@ -228,7 +241,70 @@ body {
   max-width: 800px;
   margin-left: 12rem;
 }
+/* Artists Section */
+.artists {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 
+  border-bottom: 3px dashed #A85050;
+}
+
+.artists h2 {
+  font-size: 2.5rem;
+  color: #A85050;
+  margin-bottom: 3rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.artist-card {
+  background-color: #5C4A47;
+  color: white;
+  padding: 1.5rem;
+  text-align: left;
+  max-width: 300px;
+}
+
+.artist-card h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  color: #f0e6d2;
+  font-style: italic;
+}
+
+.artist-card p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #f0e6d2;
+}
+
+
+.artist-image {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.artist-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid #333;
+}
+
+@media (max-width: 768px) {
+  .artists-grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* Responsive */
 @media (max-width: 768px) {
   .hobbies-content {
@@ -250,11 +326,6 @@ body {
   .about-box {
     padding: 1rem;
   }
-}
-
-  top: 0;
-  white-space: nowrap;
-  transition: opacity 0.2s ease;
 }
 
 .name.primary { opacity: 1; }
